@@ -7,13 +7,13 @@ application up and running.
 
 ## Description
 
-A booking system where you can book a movie ticket and manage the show time management.
+MovieBookingSystem is a Rails application that allows users to book and manage movie tickets, dynamically allocating seats and handling cancellations seamlessly.
 
-## Technologies Used
+## Technologies Used and versions
 
-- Ruby on Rails
+- Ruby on Rails: ruby 3.0.0, rails 7.0.4
 - HTML/CSS
-- Bootstrap
+- Bootstrap: 5.3.3
 - JavaScript
 
 ## Installation
@@ -23,3 +23,19 @@ A booking system where you can book a movie ticket and manage the show time mana
    ```bash
    git clone https://github.com/ishaingle/MovieBookingSystem.git
    cd MovieBookingSystem
+
+2. Install dependencies:
+   bundle install
+
+4. Create/migrate database:
+   rails db:create
+   rails db:migrate
+
+6. Create dummy data:
+   rails db:seed
+
+8. Run the server:
+   rails s
+
+9. Access url:
+   localhost:3000
