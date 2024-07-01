@@ -1,0 +1,14 @@
+<h1 class="my-4">Movies</h1>
+<div class="row">
+  <% @movies.each do |movie| %>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title"><%= movie.title %></h5>
+          <p class="card-text">Genre: <%= movie.genre %></p>
+          <%= link_to 'View Showtimes', movie, class: 'btn btn-primary' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

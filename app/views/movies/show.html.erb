@@ -1,0 +1,12 @@
+<h1 class="my-4"><%= @movie.title %></h1>
+<p>Genre: <%= @movie.genre %></p>
+<h2 class="my-4">Showtimes</h2>
+<ul class="list-group">
+  <% @movie.showtimes.each do |showtime| %>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <%= link_to showtime.time.strftime("%B %d, %Y %H:%M"), movie_showtime_path(@movie, showtime) %>
+      <span class="badge badge-primary badge-pill">Available seats: <%= showtime.available_seats %></span>
+    </li>
+  <% end %>
+</ul>
+<%= link_to 'Back', movies_path, class: 'btn btn-secondary mt-4' %>
