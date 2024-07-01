@@ -7,7 +7,7 @@
 
 <h2 class="my-4">Bookings</h2>
 <ul class="list-group">
-  <% @showtime.bookings.each do |booking| %>
+  <% @showtime.bookings.where(status: 'booked').each do |booking| %>
     <li class="list-group-item d-flex justify-content-between align-items-center">
       Seat number: <%= booking.seat_number %>
       <span class="badge bg-secondary">User: <%= booking.user.email %></span>
