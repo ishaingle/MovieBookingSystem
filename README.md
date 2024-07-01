@@ -3,22 +3,23 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+# Movie Booking System
 
-* Ruby version
+## Description
 
-* System dependencies
+A booking system where you can book a movie ticket and manage the show time management.
 
-* Configuration
+## Technologies Used
 
-* Database creation
+- Ruby on Rails
+- HTML/CSS
+- Bootstrap
+- JavaScript
 
-* Database initialization
+## Installation
 
-* How to run the test suite
+1. Clone the repository:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   ```bash
+   git clone https://github.com/ishaingle/MovieBookingSystem.git
+   cd MovieBookingSystem
